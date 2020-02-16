@@ -1,4 +1,5 @@
-data "aws_region" "current" {}
+data "aws_region" "current" {
+}
 
 variable "name" {
   description = "Name identifying the created bucket and resources"
@@ -22,3 +23,4 @@ variable "inaccessible_page_path" {
   description = "The path to the page to use for 404/403s"
   default     = "/error.html"
 }
+
